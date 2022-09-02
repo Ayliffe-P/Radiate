@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">Radiate</string>
+    <string name="map_key" translatable="false">
+        AIzaSyDbD3RgtO09Z-4wyPPAScv3BsWk47u4tRY
+    </string>
+    <string name="Default">Default</string>
+    <string name="DefaultNum">99</string>
+    <string name="Direction">Directions</string>
+
+    <string name="login">Login</string>
+    <string name="signUp">Sign up</string>
+
+    <string name="done">Done</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="enterName">Enter name</string>
+    <string name="changeName">Change name</string>
+
+    <string name="enterEmail">Enter email address</string>
+    <string name="confirmEmail">Confirm email address</string>
+    <string name="changeEmail">Change email address</string>
+
+    <string name="enterPassword">Enter password</string>
+    <string name="confirmPassword">Confirm password</string>
+    <string name="changePassword">Change password</string>\
+
+
+    <string name="unitSystem">Unit System</string>
+    <string name="darkMode">Dark Mode</string>
+    <string name="deleteAccount">Delete Account</string>
+    <string name="signOut">Sign Out</string>
+
+    <string name="AccountHeader">Account Settings</string>
+    <string name="AppHeader">App Settings</string>
+
+    <string name="title_activity_home">HomeActivity</string>
+
+    <string name="change">Change</string>
+    <string name="confirm">Confirm</string>
+    <string name="yes">Yes</string>
+    <string name="areYouSure">Are you sure you want to delete your account?</string>
+    <string name="confirmChange">Confirm change with current password</string>
+
+    <string name="google">Sign In with Google</string>
+
+    <string name="DisplayCategories">Display Categories</string>
+
+    <string name="Beach">Beach</string>
+    <string name="Atm">ATM</string>
+    <string name="Restaurant">Restaurant</string>
+    <string name="Hospital">Hospital</string>
+
+    <string name="metric">Metric System</string>
+    <string name="imperial">Imperial System</string>
+
+
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+
+
+    <string name="cd_Logo">Radiate logo</string>
+
+    <string name="cd_Profile">Profile icon</string>
+    <string name="cd_Filter">Filter icon</string>
+    <string name="cd_Category">Star icon</string>
+    <string name="cd_CurrentLocation">GPS icon</string>
+    <string name="cd_Navigate">Navigate icon</string>
+    <string name="cd_Divider">Divider</string>
+    <string name="cd_FolderIcon">Folder icon</string>
+
+
+</resources>

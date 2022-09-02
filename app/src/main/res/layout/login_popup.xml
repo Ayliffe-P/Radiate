@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="315dp"
+    android:layout_height="323dp"
+    android:layout_gravity="center"
+    android:background="@drawable/popup_box"
+    android:backgroundTint="@color/Background"
+    android:elevation="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtHeading_loginPopup"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:text="@string/login"
+        android:textColor="@color/mainText"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/divider_loginPopup"
+        android:layout_width="290dp"
+        android:layout_height="5dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="?android:attr/listDivider"
+        android:foreground="@color/grey" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edt_EmailAddress_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        app:boxStrokeWidth="0dp"
+        app:errorEnabled="true"
+        app:expandedHintEnabled="false"
+        app:hintAnimationEnabled="false"
+        app:hintEnabled="false">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="266dp"
+            android:layout_height="44dp"
+            android:background="@drawable/popup_box"
+            android:backgroundTint="@color/grey"
+            android:hint="@string/enterEmail"
+            android:paddingTop="10dp"
+            android:singleLine="true"
+            android:textColor="@color/mainText"
+            android:textColorHint="@color/Background" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edt_Password_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:boxStrokeWidth="0dp"
+        app:errorEnabled="true"
+        app:expandedHintEnabled="false"
+        app:hintAnimationEnabled="false"
+        app:hintEnabled="false"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="266dp"
+            android:layout_height="44dp"
+            android:background="@drawable/popup_box"
+            android:backgroundTint="@color/grey"
+            android:hint="@string/enterPassword"
+            android:inputType="textPassword"
+            android:paddingTop="10dp"
+            android:singleLine="true"
+            android:textColor="@color/mainText"
+            android:textColorHint="@color/Background" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCancel_LoginPopup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttons_round_corners"
+            android:text="@string/cancel"
+            app:backgroundTint="@color/red" />
+
+        <Button
+            android:id="@+id/btnDone_LoginPopup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/buttons_round_corners"
+            android:text="@string/done"
+            app:backgroundTint="@color/blue" />
+
+    </LinearLayout>
+
+</LinearLayout>

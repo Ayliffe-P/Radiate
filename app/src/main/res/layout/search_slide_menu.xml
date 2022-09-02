@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_standard_searchMenu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/popup_box"
+    android:backgroundTint="@color/Background"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingBottom="20dp"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="90dp"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <View
+        android:id="@+id/imgBar2"
+        android:layout_width="50dp"
+        android:layout_height="5dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="15dp"
+        android:background="@color/grey" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <SearchView
+            android:id="@+id/svSearch_searchMenu"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:background="@drawable/buttons_round_corners"
+            android:backgroundTint="@color/Secondary_Background"
+            android:focusable="false"
+            android:iconifiedByDefault="false"
+            android:queryHint="Search"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+        </SearchView>
+
+        <ImageButton
+            android:id="@+id/btn_Settings_searchMenu"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/buttons_circle"
+            android:backgroundTint="@color/Background"
+            android:contentDescription="@string/cd_Profile"
+            android:elevation="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_baseline_settings_24"
+            app:layout_constraintBottom_toBottomOf="@+id/map_home"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:tint="@color/mainText" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/buttons_round_corners"
+        android:backgroundTint="@color/Secondary_Background"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/DisplayCategories" />
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btnMuseum_filter"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/buttons_circle"
+                    android:backgroundTint="@color/blue"
+                    android:contentDescription="@string/Beach"
+                    android:padding="7dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_baseline_museum_24"
+                    app:tint="@color/Background" />
+
+                <ImageButton
+                    android:id="@+id/btnResturant_Filter"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/buttons_circle"
+                    android:backgroundTint="@color/red"
+                    android:contentDescription="@string/Restaurant"
+                    android:padding="7dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_baseline_restaurant_24"
+                    app:tint="@color/Background" />
+
+                <ImageButton
+                    android:id="@+id/btnATM_Filter"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/buttons_circle"
+                    android:backgroundTint="@color/purple_200"
+                    android:contentDescription="@string/Atm"
+                    android:padding="7dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_baseline_local_atm_24"
+                    app:tint="@color/Background" />
+
+                <ImageButton
+                    android:id="@+id/btnHospital_filter"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/buttons_circle"
+                    android:backgroundTint="@color/teal_200"
+                    android:contentDescription="@string/Hospital"
+                    android:padding="7dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_baseline_local_hospital_24"
+                    app:tint="@color/Background" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="315dp"
+    android:layout_height="250dp"
+    android:layout_gravity="center"
+    android:background="@drawable/popup_box"
+    android:backgroundTint="@color/Background"
+    android:elevation="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:text="@string/confirm"
+        android:textColor="@color/mainText"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/deleteAccount"
+        android:textColor="@color/mainText"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="290dp"
+        android:layout_height="5dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="?android:attr/listDivider"
+        android:foreground="@color/grey" />
+
+    <TextView
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/areYouSure"
+        android:textColor="@color/mainText"
+        android:textSize="18sp" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCancel_ConfirmDeletePopup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttons_round_corners"
+            android:text="@string/cancel"
+            app:backgroundTint="@color/red" />
+
+        <Button
+            android:id="@+id/btnConfirmed_ConfirmDeletePopup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/buttons_round_corners"
+            android:text="@string/yes"
+            app:backgroundTint="@color/blue" />
+
+    </LinearLayout>
+
+</LinearLayout>
